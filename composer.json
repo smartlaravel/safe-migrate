@@ -1,0 +1,23 @@
+{
+    "name": "smartlaravel/safe-migrate",
+    "description": "Adds a prompt the the migrate command when connected to any non local database.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philip Theobald",
+            "email": "fylzero@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "SmartLaravel\\SafeMigrate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["SmartLaravel\\SafeMigrate\\SafeMigrateServiceProvider"]
+        }
+    }
+}
