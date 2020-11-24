@@ -1,4 +1,4 @@
-# SmartLaravel/SafeMigrate
+# SmartLaravel SafeMigrate (for Laravel v8+)
 
 > This package extends the migration and seed commands.  When you run `php artisan migrate` and your `DB_HOST` setting is not set to `127.0.0.1` or `localhost` you will receive a safety confirmation asking you to confirm running the migration.  This package was created out of an issue where I was connecting to different database connections to run commands remotely, I would forget to update the database connection and run a destructive migration on production.  Luckily we backed our data up and no developers were harmed.
 
