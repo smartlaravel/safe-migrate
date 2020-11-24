@@ -24,8 +24,7 @@ class SafeMigrateServiceProvider extends ServiceProvider
     {
         /**
          * In order to extend the default Laravel migration commands to add safety
-         * checks (See: app/Console/Commands/SafetyFirst) the Migrator class
-         * must be bound and accessible to the application.
+         * checks the Migrator class must be bound and accessible to the application.
          */
         $this->app->singleton(Migrator::class, function ($app) {
             return $app['migrator'];
